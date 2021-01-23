@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+header {
+  background-color: rgb(13 113 227);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+#logo {
+  margin: 0 auto;
+  font-size: 30px;
+  font-family: "Playball", cursive;
+}
+.navbar li {
+  padding: 10px;
+  font-family: "Balthazar", serif;
+  font-family: 'Balsamiq Sans', cursive;
+}
+.navbar li a:hover {
+  background-color: white;
+  color: rgb(13 113 227);
+  padding: 12px 5px;
+}
+.social-links li {
+  padding: 10px;
+}
+header a {
+  color: white;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.servicebox {
+  flex-basis: 32%;
+  max-width: 370px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.servicebox h3 {
+  margin: 5px 0 10px;
+}
+.servicebox p {
+  margin: 0px 0 10px;
+}
+.servicebox img {
+  width: 100%;
+}
+.servlink {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.servlink a {
+  background-color: gray;
+  color: white;
+  padding: 8px 13px;
+  display: block;
+}
+.servlink a:hover {
+  background-color: transparent;
+  color: gray;
+}
+#maincon {
+  display: flex;
+}
+aside {
+  flex: 0 0 20vw; /*Vertical view*/
+  background-color: rgba(176, 222, 248, 0.336);
+}
+aside img {
+  width: 100%;
+}
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+aside li {
+  padding: 0px 12px;
+}
+aside ul a {
+  color: rgb(13 113 227);
+  padding: 10px;
+  display: block;
+  border-bottom: 1px solid gray;
+}
+footer {
+  background-color: rgb(13 113 227);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+article {
+  padding: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .servicebox {
+    flex-basis: 48%;
+    max-width: 370px;
+  }
+  aside {
+    flex: 0 0 30vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  #logo {
+    order: -1;
+  }
+  #maincon {
+    flex-direction: column;
+  }
+  article {
+    order: -1;
+  }
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    text-align: center;
+  }
+}
